@@ -4,13 +4,14 @@ const Room = function(area) {
 }
 
 
-Room.prototype.roomPainted = function() {
-    if(this.painted === false)
-    return true 
+Room.prototype.canBePainted = function(paint) {
+return (this.area >= this.litres)
+
 }
 
 
 
+//this one below worked but i dont think for the right reasons!
 
 // Room.prototype.roomPainted = function() {
 //     if(this.painted === false)
