@@ -11,12 +11,12 @@ return (this.area >= this.litres)
 
 
 
-//this one below worked but i dont think for the right reasons!
+//this one below worked but not sure for the right reasons?
 
-// Room.prototype.roomPainted = function() {
-//     if(this.painted === false)
-//     return true 
-// }
+Room.prototype.roomPainted = function() {
+    if(this.painted === false)
+    return true 
+}
 
 
 

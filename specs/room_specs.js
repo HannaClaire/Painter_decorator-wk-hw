@@ -26,17 +26,17 @@ it('should start not painted', function() {
 })
 
 
-// it('should be able to be painted', function() {
-//     const actual = room.roomPainted();
-//     const expected = true
-//     assert.strictEqual(actual, expected)
-// })
-
-xit('should be able to be painted', function() {
-    // const litrePerMetre = room.area - paint.litres
-    const actual = room.canBePainted(paint.litres)
-    assert.strictEqual(actual, "Can be painted!")
+it('should be able to be painted', function() {
+    const actual = room.roomPainted();
+    const expected = true
+    assert.strictEqual(actual, expected)
 })
+
+// xit('should be able to be painted', function() {
+//     // const litrePerMetre = room.area - paint.litres
+//     const actual = room.canBePainted(paint.litres)
+//     assert.strictEqual(actual, "Can be painted!")
+// })
 
 })
 

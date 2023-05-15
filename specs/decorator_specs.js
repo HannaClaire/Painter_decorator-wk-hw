@@ -45,5 +45,13 @@ it('should be able to calculate whether it has enough paint to paint a room', fu
     const actual = decorator.enoughPaintForRoom(roomArea)
     assert.deepStrictEqual(actual, true)
 })
-xit('should be able to paint room if has enough paint')
+it('should be able to paint room if has enough paint', function() {
+// i didnt want to create a room instance in this spec as it seemed somewhat illogical that a decorator would always have an associated room with them.Wonder if this is the correct way of thinking in the context of this application?
+    const roomArea = 10
+    decorator.add(redPaint)
+    paint = redPaint
+    const actual = decorator.canPaintRoom(roomArea)
+    assert.deepStrictEqual(actual, true )
+}
+)
 })

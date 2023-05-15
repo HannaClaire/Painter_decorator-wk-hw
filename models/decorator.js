@@ -25,4 +25,11 @@ Decorator.prototype.enoughPaintForRoom = function(area)  {
     return totalLitres >= area
 }
 
+
+Decorator.prototype.canPaintRoom = function(roomArea) {
+    if (this.totalPaintAmount() >= roomArea) {
+        return true
+    }
+    return false
+}
 module.exports = Decorator
